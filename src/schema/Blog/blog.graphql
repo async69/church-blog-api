@@ -1,0 +1,14 @@
+extend type Query {
+    blogs: [Blog!]
+}
+
+extend type Mutation {
+    addBlog(title: String!, author: String!, content: String!): Blog!
+}
+
+type Blog {
+    _id: String!
+    title: String!
+    author: String!
+    content: String!
+}
