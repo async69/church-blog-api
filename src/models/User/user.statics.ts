@@ -5,6 +5,6 @@ export async function findOneOrCreate (this: IUserModel, userID: string): Promis
     if (record) {
         return record
     } else {
-        return this.create({ userID })
+        return null as any
     }
 }
